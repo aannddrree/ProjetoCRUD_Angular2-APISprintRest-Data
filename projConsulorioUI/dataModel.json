@@ -1,0 +1,17 @@
+ {
+    "Doctor": {
+        "id": { "key": "true" },
+        "name": { "type": "string", "require": "true" },
+        "address": "string",
+        "available": "boolean"        
+    },
+    "Patient": {
+        "id": { "key": "true" },
+        "name": { "type": "string", "require": "true" },
+        "address": "string",
+        "age": "number",
+        "history": {"type": "string", "textArea": "true" },
+        "doctorId": { "referent": "Doctor", "render": "name" }
+    },
+    "relativeURI": "/api"
+}
